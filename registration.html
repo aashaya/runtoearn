@@ -24,18 +24,18 @@ Created      : 6/7/2013
     <link href="css/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div data-role="page" id="page" data-theme="custom" style="overflow: hidden; width: 100%">
+    <div data-role="page" id="page" data-theme="custom" class="page">
         <div data-role="header" data-theme="b" class="header">
             <table width="100%" border="0" cellpadding="3" cellspacing="0">
                 <tr>
                     <td width="28%" align="left">
-                        <a id="backRegistration" data-transition="none" style="text-decoration:none; border-color:#407fb5;">
-                        <span class="r2e-arrow-left" title="Back" style="border-color:#407fb5;"></span></a>&nbsp;
+                        <a id="backRegistration" data-transition="none" class="btnborder">
+                        <span class="r2e-arrow-left" title="Back" class="btnborder"></span></a>&nbsp;
                         <a href="index.html"  data-transition="none" class="button home custom" data-transition="none"
                                 style="padding: 6px; margin-left: 3.7em;"><span></span>&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </td>
                     <td width="50%" align="center">
-                        <span style="font-size: 12px; font-family: Arial; color: #ffffff; font-weight: bold;">
+                        <span class="pageheader">
                             Registration</span>
                     </td>
                     <td width="22%" align="right">
@@ -82,24 +82,9 @@ Created      : 6/7/2013
                     <span class="error" id="errorContactPhNum" style="display: none">Contact Phone # is
                         required.</span> </li>
                 <li data-role="fieldcontain" data-icon="arrow-r">
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Register" data-mini="true" data-inline="true" data-theme="b">
                     <span class="error" id="errorSpan" style="display: none">Please enter values in the
                         missing fields.</span> </li>
-                <style type="text/css">
-                    input:required:invalid, input:focus:invalid
-                    {
-                        background-image: url(https://github.com/aashaya/runtoearn/blob/master/images/error.png);
-                        background-size: contain;
-                        background-position: right;
-                        background-repeat: no-repeat;
-                        -moz-box-shadow: none;
-                    }
-                    .error
-                    {
-                        color: #d12f19;
-                        font-size: 12px;
-                    }
-                </style>
             </ul>
             </form>
         </div>
