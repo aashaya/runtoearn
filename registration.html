@@ -82,12 +82,21 @@ Created      : 6/7/2013
                     <span class="error" id="errorContactPhNum" style="display: none">Contact Phone # is
                         required.</span> </li>
                 <li data-role="fieldcontain" data-icon="arrow-r">
-                    <input type="submit" value="Register" data-mini="true" data-inline="true" data-theme="b">
+                    <input id="register" type="submit" value="Register" data-mini="true" data-inline="true" data-theme="b">
                     <span class="error" id="errorSpan" style="display: none">Please enter values in the
                         missing fields.</span> </li>
             </ul>
             </form>
         </div>
+        <script>
+            $('#register').click(function () {
+                alert("Under construction");
+            });
+            $("#backRegistration").click(function () {
+                parent.history.back();
+                return false;
+            });
+        </script>
     <div data-role="footer" data-theme="b" align="center" data-position="fixed" style="height:30px">
             <span class="footer">&copy; RuntoEarn | <a href="#" class="footer">Full Site</a></span>
         </div>
