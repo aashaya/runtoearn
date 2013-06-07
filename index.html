@@ -65,7 +65,7 @@ Created      : 06/07/2013
                             Click <strong>Log in</strong> to continue.
                         </p>
                         <div style="height:4px"></div>
-                        <a data-role="button" class="login" data-mini="true" data-inline="true" data-theme="b">
+                        <a data-role="button" class="login" data-mini="true" data-inline="true" data-theme="b" href="login.html" data-transition="none">
                             Log in
                         </a>
                         <br />
@@ -73,19 +73,13 @@ Created      : 06/07/2013
                         <hr />
                         <br />
                         <p class="registertext">
-                        New to Run2Earn? Click <a href="registration.html" class="registerusr">here</a> to register.
+                        New to Run2Earn? Click <a href="registration.html" class="registerusr" data-transition="none">here</a> to register.
                         </p>
                         <div style="height:4px"></div>
                     </div>
                 </li>
             </ul>
         </div>
-        <script>
-            $('.login').click(function () {
-                //$.mobile.changePage("login.html", { transition: "none" });
-                window.location.href = "login.html";
-            });
-        </script>
         <div data-role="footer" data-theme="b" align="center" data-position="fixed" style="height:30px">
             <span class="footer">&copy; RuntoEarn | <a href="#" class="footer">Full Site</a></span>
         </div>
