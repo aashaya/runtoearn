@@ -1,1 +1,76 @@
-test
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Run To Earn :  Home</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.css">
+</head>
+<body>
+
+  <!-- ========= -->
+  <!-- HTML -->
+  <!-- ========= -->
+	<div class="container">
+    <h3>User Manager</h3>
+	<div class="page">    
+    </div>
+	</div>
+	<script type="text/template" id="user-list-template">
+	<a href="#/new" class="btn btn-primary">New user</a>
+<table class="table striped">
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Age</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+	<% _.each(users, function(user){ %>
+		<tr>
+		<td><%= user.get('firstname')%></td>
+		<td><%= user.get('lastname')%></td>
+		<td><%= user.get('age')%></td>
+		<td><a href="#/edit/<%= user.id%>" class="btn">Edit</a></td>
+		</tr>
+	<% });%>
+</tbody>
+	</script>
+    <script type="text/template" id="edit-user-template">
+	<form class="edit-user-form">
+		<legend><%= user ? 'Update' : 'Create' %> User</legend>
+		<label>First Name </label>
+		<input type="text" name="firstname" value="<%= user ? user.get('firstname') : '' %>"/>
+		<label>Last Name </label>
+		<input type="text" name="lastname" value="<%= user ? user.get('lastname') : '' %>"/>
+		<label>Age </label>
+		<input type="text" name="age" value="<%= user ? user.get('age') : '' %>"/>
+		<hr />
+		<button type="submit" class="btn"> <%= user ? 'Update' : 'Create' %></button>
+		<%if(user) {%>
+			<input type="hidden" name="id" value="<%= user.id%>" />
+			<button class="btn btn-danger delete">Delete</button>
+		<%};%>		
+	</form>
+	</script>
+  <!-- ========= -->
+  <!-- Libraries -->
+  <!-- ========= -->
+	
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js"></script>
+
+  <!-- =============== -->
+  <!-- Javascript code -->
+  <!-- =============== -->
+
+<script src="js/home/home.js"></script>
+
+</body>
+</html>
