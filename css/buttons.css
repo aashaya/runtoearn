@@ -1,77 +1,7 @@
 ﻿/*****************************************************
         CSS to create header buttons.
-        Last Updated: 11/19/2012
 *************************************************/
-.transformedObject    
-{
-    position:absolute;
-    content : ' ';
-    left:1px;
-    top:3px;
-    height : 20px;
-    width: 21px;
-    z-index : 1;
-
-    background-repeat:repeat-x;
-    background-size : 27px 27px;
-    background-position :-1px -1.5px;
-    
-    -moz-transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
-    -o-transform : rotate(-45deg) skewY(-10deg) skewX(-10deg);
-    -webkit-transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
-    transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
-    transform: rotate(-45deg) skew(-10deg, -10deg);
-    
-    background-color: rgb(96,151,199);
-    background-image : -moz-linear-gradient(
-        45deg,
-        rgba(0,0,0,0) 0%,
-        rgba(0,0,0,0) 0%,
-        rgba(255,255,255,0.1) 52%,
-        rgba(255,255,255,0.4) 100%
-        );
-    background-image : -o-linear-gradient(
-        45deg,
-        rgba(0,0,0,0) 0%,
-        rgba(0,0,0,0) 0%,
-        rgba(255,255,255,0.1) 52%,
-        rgba(255,255,255,0.4) 100%
-        );
-    background-image : -webkit-linear-gradient(
-        45deg,
-        rgba(0,0,0,0) 0%,
-        rgba(0,0,0,0) 0%,
-        rgba(255,255,255,0.1) 52%,
-        rgba(255,255,255,0.4) 100%
-        );
-    background-image : linear-gradient(
-        45deg,
-        rgba(0,0,0,0) 0%,
-        rgba(0,0,0,0) 0%,
-        rgba(255,255,255,0.1) 52%,
-        rgba(255,255,255,0.4) 100%
-        );
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#9bbedc', EndColorStr='#6097c7')"; 
-    /* IE8+ - must be on one line, unfortunately */ 
-   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.5824247774214437, M12=0.5824247774214417, M21=-0.8317887849516516, M22=0.831788784951653, SizingMethod='auto expand')";
-   
-   /* IE6 and 7 */ 
-   filter: progid:DXImageTransform.Microsoft.Matrix(
-            M11=0.5824247774214437,
-            M12=0.5824247774214417,
-            M21=-0.8317887849516516,
-            M22=0.831788784951653,
-            SizingMethod='auto expand');
-    border: 1px solid rgb(64,127,181);
-    border-top-right-radius : 8px;
-    border-top-left-radius :0px;
-    border-bottom-right-radius : 0;
-    border-bottom-left-radius : 10px;
-    /*
-    * To make the transform-origin be the middle of
-    * the object.      
-    */   
-}                     
+                   
 .button
 {    
     color: #ffffff;
@@ -321,7 +251,7 @@ header.button
 /***********************************************************
     New button for all browser
 ***************************************************************/
-.bch-arrow-left {
+.r2e-arrow-left {
     display : block;
     position:absolute;
     z-index : 0;
@@ -373,7 +303,7 @@ header.button
     user-select: none;
 }
 
-.bch-arrow-left:before{
+.r2e-arrow-left:before{
     position:absolute;
     content : ' ';
     left:-8px;
@@ -437,7 +367,7 @@ header.button
             to(transparent));
     */
 }
-.bch-arrow-left:after {
+.r2e-arrow-left:after {
     /*font-family : HelveticaNeue,Helvetica, Arial;*/
     font-family : Arial;
     font-weight: bold;
@@ -484,16 +414,16 @@ header.button
         );
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#9bbedc', endColorstr='#6097c7');/*For IE7-8-9*/
 }
-.bch-arrow-left,
-.bch-arrow-left:after,
-.bch-arrow-left:before {
+.r2e-arrow-left,
+.r2e-arrow-left:after,
+.r2e-arrow-left:before {
     /*background-color: rgba(74,108,155,1);originalcolor*/
     background-color: rgba(96,151,199,1);
 }
 
-.bch-arrow-left:hover,
-.bch-arrow-left:hover:after,
-.bch-arrow-left:hover:before {
+.r2e-arrow-left:hover,
+.r2e-arrow-left:hover:after,
+.r2e-arrow-left:hover:before {
     /*background-color: rgba(54,88,135,1);hovercolor*/
     /*background-color: #3f6992;*/
     /*IE does not recognize rgba() as a color definition, so it ignores this declaration. 
