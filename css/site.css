@@ -1,0 +1,81 @@
+﻿body {
+}
+
+.footer
+{
+    color: #fff; 
+    font-size: 10px; 
+    font-family: Arial; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+.registerusr
+{
+    color: #5780a0; 
+    font-size: 12px; 
+    font-family: Arial; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+.page
+{
+    overflow: hidden; 
+    width: 100%
+}
+.btnborder
+{
+    text-decoration:none; 
+    border-color:#407fb5;
+}
+.pageheader
+{
+      font-size: 12px; 
+      font-family: Arial; 
+      color: #ffffff; 
+      font-weight: bold;
+}
+input:required:invalid, input:focus:invalid
+{
+    background-image: url('../images/error.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    -moz-box-shadow: none;
+}
+.error
+{
+    color: #d12f19;
+    font-size: 12px;
+}
+.nolinktext
+{
+    color: #000; 
+    font-size: 14px; 
+    font-family: Arial; 
+    text-decoration: none;
+}
+
+.registertext
+{
+    color: #000; 
+    font-size: 12px; 
+    font-family: Arial; 
+    text-decoration: none;
+}
+
+.welcometext
+{
+    color: #5780a0;
+    font-size: 16px;
+    font-family: Arial; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+[data-theme=b].ui-btn-corner-all 
+{
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+}
