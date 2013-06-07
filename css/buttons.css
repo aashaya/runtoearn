@@ -1,6 +1,77 @@
 ﻿/*****************************************************
         CSS to create header buttons.
+        Last Updated: 11/19/2012
 *************************************************/
+.transformedObject    
+{
+    position:absolute;
+    content : ' ';
+    left:1px;
+    top:3px;
+    height : 20px;
+    width: 21px;
+    z-index : 1;
+
+    background-repeat:repeat-x;
+    background-size : 27px 27px;
+    background-position :-1px -1.5px;
+    
+    -moz-transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
+    -o-transform : rotate(-45deg) skewY(-10deg) skewX(-10deg);
+    -webkit-transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
+    transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
+    transform: rotate(-45deg) skew(-10deg, -10deg);
+    
+    background-color: rgb(96,151,199);
+    background-image : -moz-linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    background-image : -o-linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    background-image : -webkit-linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    background-image : linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#9bbedc', EndColorStr='#6097c7')"; 
+    /* IE8+ - must be on one line, unfortunately */ 
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.5824247774214437, M12=0.5824247774214417, M21=-0.8317887849516516, M22=0.831788784951653, SizingMethod='auto expand')";
+   
+   /* IE6 and 7 */ 
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=0.5824247774214437,
+            M12=0.5824247774214417,
+            M21=-0.8317887849516516,
+            M22=0.831788784951653,
+            SizingMethod='auto expand');
+    border: 1px solid rgb(64,127,181);
+    border-top-right-radius : 8px;
+    border-top-left-radius :0px;
+    border-bottom-right-radius : 0;
+    border-bottom-left-radius : 10px;
+    /*
+    * To make the transform-origin be the middle of
+    * the object.      
+    */   
+}                     
 .button
 {    
     color: #ffffff;
@@ -194,7 +265,7 @@ header.button
     display: block;
     height: 15px;
     width: 17px;
-    background-image: url(https://github.com/aashaya/runtoearn/blob/master/images/homebtn.png);
+    background-image: url('../images/homebtn.png');
     /*background-image: -webkit-gradient(linear, left top, right bottom, 
     from(#7d828c),
     color-stop(0.5, #303749), 
@@ -210,10 +281,10 @@ header.button
     color-stop(0.5, transparent), 
     to(transparent));
     -webkit-transform: rotate(45deg);*/
-    -webkit-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/homebtn.png);
-    -ms-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/homebtn.png);
-    -moz-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/homebtn.png);
-    -o-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/homebtn.png);
+    -webkit-mask-image: url('../images/homebtn.png');
+    -ms-mask-image: url('../images/homebtn.png');
+    -moz-mask-image: url('../images/homebtn.png');
+    -o-mask-image: url('../images/homebtn.png');
     left: 3px;
     top: 4px;
 }
@@ -223,7 +294,7 @@ header.button
     display: block;
     height: 14px;
     width: 19px;
-    background-image: url(https://github.com/aashaya/runtoearn/blob/master/images/list.png);
+    background-image: url('../images/list.png');
     /*background-image: -webkit-gradient(linear, left top, right bottom, 
     from(#7d828c),
     color-stop(0.5, #303749), 
@@ -239,10 +310,10 @@ header.button
     color-stop(0.5, transparent), 
     to(transparent));
     -webkit-transform: rotate(45deg);*/
-    -webkit-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/list.png);
-    -ms-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/list.png);
-    -moz-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/list.png);
-    -o-mask-image: url(https://github.com/aashaya/runtoearn/blob/master/images/list.png);
+    -webkit-mask-image: url('../images/list.png');
+    -ms-mask-image: url('../images/list.png');
+    -moz-mask-image: url('../images/list.png');
+    -o-mask-image: url('../images/list.png');
     left: 3px;
     top: 5px;
 }
@@ -250,7 +321,7 @@ header.button
 /***********************************************************
     New button for all browser
 ***************************************************************/
-.r2e-arrow-left {
+.bch-arrow-left {
     display : block;
     position:absolute;
     z-index : 0;
@@ -263,28 +334,46 @@ header.button
 
     background-repeat:repeat-x;
     background-position :0;
-    border-radius: 5px;
-    color: rgba(64, 127, 181, 1);
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    background-image: -webkit-linear-gradient(
+    background-image : -moz-linear-gradient(
         90deg,
         rgba(0,0,0,0) 0%,
         rgba(0,0,0,0) 0%,
         rgba(255,255,255,0.1) 50%,
         rgba(255,255,255,0.3) 100%
-        );/*For IE7-8-9*/
+        );
+    background-image : -o-linear-gradient(
+        90deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+        );
+    background-image : -webkit-linear-gradient(
+        90deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+        );
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#9bbedc', endColorstr='#6097c7');/*For IE7-8-9*/
+    border-radius: 5px;
+
     /*border-bottom: 1px solid rgba(255,255,255,0.4);*/
+    border: 1px solid rgba(64,127,181,1);
+    
     /*box-shadow :0 -1px 1px rgba(64,127,181,0.2)inset,
         0 1px 2px rgba(64,127,181,0.8)inset;*/
+    color: rgba(64,127,181,1);
     /*color:#fff;*/
     /*text-shadow : 0px -1px 0px rgba(0,0,0,0.8);*/
-    }
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 
-.r2e-arrow-left:before{
+.bch-arrow-left:before{
     position:absolute;
     content : ' ';
     left:-8px;
@@ -296,29 +385,66 @@ header.button
     background-repeat:repeat-x;
     background-size : 27px 27px;
     background-position :-1px -1.5px;
-    -moz-transform: rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
-    -o-transform: rotate(-45deg) skewY(-10deg) skewX(-10deg);
-    -webkit-transform: rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
-    transform: rotate(-45deg) skew(-10deg, -10deg);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 10px;
-    background-image: linear-gradient(
+    background-image : -moz-linear-gradient(
         45deg,
         rgba(0,0,0,0) 0%,
         rgba(0,0,0,0) 0%,
         rgba(255,255,255,0.1) 52%,
         rgba(255,255,255,0.4) 100%
-        );/*For IE7-8-9*/
+        );
+    background-image : -o-linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    background-image : -webkit-linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    background-image : linear-gradient(
+        45deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 52%,
+        rgba(255,255,255,0.4) 100%
+        );
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#9bbedc', endColorstr='#6097c7');/*For IE7-8-9*/
+    -moz-transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
+    -o-transform : rotate(-45deg) skewY(-10deg) skewX(-10deg);
+    -webkit-transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
+    transform : rotateZ(-45deg) skewY(-10deg) skewX(-10deg);
+    transform: rotate(-45deg) skew(-10deg, -10deg);
+    border-top-right-radius : 8px;
+    border-top-left-radius :0px;
+    border-bottom-right-radius : 0;
+    border-bottom-left-radius : 10px;
+
+    /*border-left : 1px solid rgba(255,255,255,0.4);*/
+    border: 1px solid rgba(64,127,181,1);
+    /*box-shadow :  0px 1px 1px rgba(64,127,181,0.7) inset,
+        2px -2px 2px -3px rgba(64,127,181,0.5) inset;*/
+
+    /*-webkit-mask-image :
+        -webkit-gradient(linear, left top, right bottom,
+            from(#000000),
+            color-stop(0.4,#000000),
+            color-stop(0.5, transparent),
+            to(transparent));
+    */
 }
-.r2e-arrow-left:after {
+.bch-arrow-left:after {
     /*font-family : HelveticaNeue,Helvetica, Arial;*/
     font-family : Arial;
     font-weight: bold;
     font-size : 12px;
     line-height : 27px;
     text-align:center;    
+    content: attr(title)"";
     color: #ffffff;
     color: rgba(255,255,255,1);
     text-decoration: none;
@@ -335,6 +461,20 @@ header.button
     background-position :-1px -0.5px;
     /*box-shadow :0 -3px 1px -2px rgba(64,127,181,0.3)inset,
                 0 4px 2px -3px rgba(64,127,181,0.8)inset;*/
+    background-image : -webkit-linear-gradient(
+        90deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+        );
+    background-image : -moz-linear-gradient(
+        90deg,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 0%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+        );
     background-image : -o-linear-gradient(
         90deg,
         rgba(0,0,0,0) 0%,
@@ -342,7 +482,8 @@ header.button
         rgba(255,255,255,0.1) 50%,
         rgba(255,255,255,0.3) 100%
         );
-    }
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#9bbedc', endColorstr='#6097c7');/*For IE7-8-9*/
+}
 .bch-arrow-left,
 .bch-arrow-left:after,
 .bch-arrow-left:before {
