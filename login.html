@@ -56,7 +56,6 @@ Created      : 6/7/2013
             </ul>
         </div>
         <div data-role="content">
-            <form class="Login-user-form">
             <ul id="LoginForm" data-role="listview" data-theme="c">
                 <li data-role="fieldcontain" data-icon="arrow-r">
                     <label for="Username" style="color:Black;">
@@ -74,11 +73,10 @@ Created      : 6/7/2013
                         data-inline="true">
                 </li>
                 <li data-role="fieldcontain" data-icon="arrow-r">
-                    <input type="submit" value="Login" data-mini="true" data-inline="true" data-theme="b" class="login"  data-transition="none">
+                    <a data-role="button" data-mini="true" data-inline="true" data-theme="b" class="login"  data-transition="none">Log in </a>
                     <span class="error" id="errorSpan" style="display: none">Please enter values in the
                         missing fields.</span> </li>
             </ul>
-            </form>
         </div>
         <script>
             $("#backLogin").click(function () {
