@@ -2,17 +2,10 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-<<<<<<< HEAD
         id        = "org.childrenshospital.MyChildrens"
         version   = "1.0.0">
 
   <name>Run To Earn</name>
-=======
-        id        = "com.runtoearn"
-        version   = "1.0.0">
-
-  <name>JPT</name>
->>>>>>> 2daf73087d8f13f32403f4ec906488e5ff6b0999
 
   <description>
       Test Application
@@ -21,28 +14,17 @@
   <author href="http://www.runtoearn.com" email="support@runtoearn.com">
       Run To Earn Web Team.
   </author>
-<<<<<<< HEAD
 	
 	<feature name="http://api.phonegap.com/1.0/device" />
-=======
-  
-  <feature name="http://api.phonegap.com/1.0/device" />
->>>>>>> 2daf73087d8f13f32403f4ec906488e5ff6b0999
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/camera"/>
 
   <preference name="permissions" value="none"/>
   <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-<<<<<<< HEAD
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 
   <!-- Customize your app and platform with the preference element.   -->
-=======
-  <plugin name="InAppBrowser" value="CDVInAppBrowser" />
-
-  <!-- Customize your app and platform with the preference element.-->
->>>>>>> 2daf73087d8f13f32403f4ec906488e5ff6b0999
   <preference name="phonegap-version"           value="2.5.0" />          <!-- all: current version of PhoneGap -->
   <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
   <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
@@ -68,15 +50,9 @@
   <!-- Define app icon for each platform. -->
   <icon src="icon.png" />
   <icon src="icon.png"	  gap:platform="android"    gap:density="ldpi" />
-<<<<<<< HEAD
   <icon src="icon.png"   	gap:platform="android"    gap:density="mdpi" />
   <icon src="icon.png"   	gap:platform="android"    gap:density="hdpi" />
   <icon src="icon.png"  	gap:platform="android"    gap:density="xhdpi" />
-=======
-  <icon src="icon.png"    gap:platform="android"    gap:density="mdpi" />
-  <icon src="icon.png"    gap:platform="android"    gap:density="hdpi" />
-  <icon src="icon.png"    gap:platform="android"    gap:density="xhdpi" />
->>>>>>> 2daf73087d8f13f32403f4ec906488e5ff6b0999
   <icon src="icon.png"    gap:platform="ios"        width="57" height="57" />
   <icon src="icon.png"    gap:platform="ios"        width="72" height="72" />
   <icon src="icon.png"    gap:platform="ios"        width="114" height="114" />
@@ -84,8 +60,4 @@
   
   <access origin="*" />
 	
-<<<<<<< HEAD
 </widget>
-=======
-</widget>
->>>>>>> 2daf73087d8f13f32403f4ec906488e5ff6b0999
