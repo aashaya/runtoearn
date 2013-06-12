@@ -113,8 +113,10 @@ if (navigator.geolocation) {
             </ul>
         </div>
         <div data-role="content">
-            <span id="status">Locating...</span>
+	         <article>
+      		 <p>Finding your location: <span id="status">checking...</span></p>
 	        <a data-role=button id="btnCheckin" data-theme="b" data-inline="true" data-mini="true">Check In</a>
+            </article>
         </div>
         <script>
             $("#backCheckin").click(function () {
