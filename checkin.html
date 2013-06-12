@@ -31,7 +31,7 @@ function success(position) {
     return;
   }
   
-  s.innerHTML = "Yeha chupey ho!!!";
+  s.innerHTML = "Yeha chupey ho!!!"  + "<br />lat: " + position.coords.latitude + "lng: " + position.coords.longitude;
   s.className = 'success';
   
   var mapcanvas = document.createElement('div');
@@ -118,7 +118,7 @@ if (navigator.geolocation) {
         </div>
         <div data-role="content">
 	         <article>
-      		 <p>Finding your location: <span id="status">checking...</span></p>
+      		 <p><span id="status">Ek chin hai...</span></p>
 	        <a data-role=button id="btnCheckin" data-theme="b" data-inline="true" data-mini="true">Check In</a>
             </article>
         </div>
