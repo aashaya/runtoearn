@@ -24,10 +24,6 @@ Created      : 6/7/2013
     <link href="css/site.css" rel="stylesheet" type="text/css" />
     <script>
         $(document).on("pageinit", "#pagecheckin", function () {
-            navigator.geolocation.getCurrentPosition(function (pos) {
-                var lat = pos.coords.latitude;
-                var lng = pos.coords.longitude;
-                alert(lat + " " + lng);
                 var centerLocation = new google.maps.LatLng('57.77828', '14.17200');
                 var myOptions = {
                     center: centerLocation,
@@ -43,7 +39,6 @@ Created      : 6/7/2013
                 $("#map_canvas").height(mapheight);
                 $("#map_canvas").width(mapwidth);
                 google.maps.event.trigger(map, 'resize');
-            });
         });
         </script>
 </head>
