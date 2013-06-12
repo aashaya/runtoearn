@@ -40,8 +40,8 @@ function success(position) {
   var nh = h - 50;
   var w = $(window).width();
   var nw = w - 30;
-  mapcanvas.style.height = nh;
-  mapcanvas.style.width = nw;
+  mapcanvas.style.height = nh + 'px';
+  mapcanvas.style.width = nw + 'px';
     
   document.querySelector('article').appendChild(mapcanvas);
   
