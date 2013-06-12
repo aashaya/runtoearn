@@ -36,8 +36,8 @@ function success(position) {
   
   var mapcanvas = document.createElement('div');
   mapcanvas.id = 'mapcanvas';
-  mapcanvas.style.height = '400px';
-  mapcanvas.style.width = '560px';
+  mapcanvas.style.height = $(window).height() - 100;
+  mapcanvas.style.width = $(window).width() - 30 ;
     
   document.querySelector('article').appendChild(mapcanvas);
   
