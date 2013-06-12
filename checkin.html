@@ -23,16 +23,8 @@ Created      : 6/7/2013
     <link href="css/buttons.css" rel="stylesheet" type="text/css" />
     <link href="css/site.css" rel="stylesheet" type="text/css" />
     <script>
-    	navigator.geolocation.getCurrentPosition (function (pos)
-	{
-	  var lat = pos.coords.latitude;
-	  var lng = pos.coords.longitude;
-	  $("#lat").val (lat);
-	  $("#lng").val (lng);
-	});
-	
         $(document).on("pageinit", "#pagecheckin", function () {
-                var centerLocation = new google.maps.LatLng('57.77828', '14.17200');
+                var centerLocation = new google.maps.LatLng(position.coords.latitude,  position.coords.longitude);
                 var myOptions = {
                     center: centerLocation,
                     zoom: 8,
@@ -42,8 +34,8 @@ Created      : 6/7/2013
         
                 map_element = document.getElementById("map_canvas");
                 map = new google.maps.Map(map_element, myOptions);
-                var mapwidth = $(window).width();
-                var mapheight = $(window).height();
+                var mapwidth = $(window).width() - 20;
+                var mapheight = $(window).height() - 100;
                 $("#map_canvas").height(mapheight);
                 $("#map_canvas").width(mapwidth);
                 google.maps.event.trigger(map, 'resize');
@@ -90,9 +82,7 @@ Created      : 6/7/2013
         </div>
         <br />
         <div data-role="content">
-        	<span> Latitude : </span> <input type=text id=lat />
-    		<span> Longitude : </span> <input type=text id=lng />
-    		<a data-role=button id="btnCheckin" data-theme="b" data-inline="true" data-mini="true">Check In</a>
+        	<a data-role=button id="btnCheckin" data-theme="b" data-inline="true" data-mini="true">Check In</a>
     		<div id="map_canvas"></div>
         </div>
         <script>
