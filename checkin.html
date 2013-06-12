@@ -36,8 +36,12 @@ function success(position) {
   
   var mapcanvas = document.createElement('div');
   mapcanvas.id = 'mapcanvas';
-  mapcanvas.style.height = $(window).height() - 100;
-  mapcanvas.style.width = $(window).width() - 30 ;
+  var h = $(window).height();
+  var nh = h - 50;
+  var w = $(window).width();
+  var nw = w - 30;
+  mapcanvas.style.height = nh;
+  mapcanvas.style.width = nw;
     
   document.querySelector('article').appendChild(mapcanvas);
   
