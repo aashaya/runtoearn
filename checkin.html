@@ -23,24 +23,28 @@ Created      : 6/7/2013
     <link href="css/buttons.css" rel="stylesheet" type="text/css" />
     <link href="css/site.css" rel="stylesheet" type="text/css" />
     <script>
-            $(document).on("pageinit", "#pagecheckin", function () {
+        $(document).on("pageinit", "#pagecheckin", function () {
+            navigator.geolocation.getCurrentPosition(function (pos) {
+                var lat = pos.coords.latitude;
+                var lng = pos.coords.longitude;
+                alert(lat + " " + lng);
                 var centerLocation = new google.maps.LatLng('57.77828', '14.17200');
-
-        var myOptions = {
-            center: centerLocation,
-            zoom: 8,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            callback: function () { alert('callback'); }
-        };
-
-        map_element = document.getElementById("map_canvas");
-        map = new google.maps.Map(map_element, myOptions);
-        var mapwidth = $(window).width();
-        var mapheight = $(window).height();
-        $("#map_canvas").height(mapheight);
-        $("#map_canvas").width(mapwidth);
-        google.maps.event.trigger(map, 'resize');
+                var myOptions = {
+                    center: centerLocation,
+                    zoom: 8,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    callback: function () { alert('callback'); }
+                };
+        
+                map_element = document.getElementById("map_canvas");
+                map = new google.maps.Map(map_element, myOptions);
+                var mapwidth = $(window).width();
+                var mapheight = $(window).height();
+                $("#map_canvas").height(mapheight);
+                $("#map_canvas").width(mapwidth);
+                google.maps.event.trigger(map, 'resize');
             });
+        });
         </script>
 </head>
 <body>
