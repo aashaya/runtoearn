@@ -9,7 +9,6 @@ $(function () {
         /*if ($("#Username").val() == 'test' && $("#Password").val() == 'abc123') {
             $.mobile.changePage("checkin.html", { transition: "none" });
         }*/
-		//window.location.href = "checkin.html";
-		 $.mobile.changePage("checkin.html", { transition: "none" });
+	window.location.href = "checkin.html";	 
     });
 });
