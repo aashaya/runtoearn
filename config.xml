@@ -5,14 +5,14 @@
         id        = "com.runtoearn"
         version   = "1.0.0">
 
-  <name>Gadey</name>
+  <name>AashayaTestApp</name>
 
   <description>
       Test Application
   </description>
 
   <author href="http://www.runtoearn.com" email="support@runtoearn.com">
-      daud..dhana dhan daud....
+      This is test application.
   </author>
 	
   <feature name="http://api.phonegap.com/1.0/device" />
